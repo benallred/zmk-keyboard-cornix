@@ -7,5 +7,8 @@ on:
       - "config/*"
 
 jobs:
+  context-info:
+    uses: benallred/gha-reference/.github/workflows/context-info.yml@master
+
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
