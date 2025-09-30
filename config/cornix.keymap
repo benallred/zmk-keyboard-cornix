@@ -185,17 +185,16 @@
         default_layer {
             display-name = "Base";
 
-            // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            // ---------------------------------- COLEMAK-DH LAYOUT ----------------------------------
+            // |  TAB |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   ;   |   \   |
+            // |  ESC |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   '   |
+            // | MOD4 |  Z  |  X  |  C   |  D   |  V   |  MUTE  |  |       |  K   |  H    |  ,    |  .   |   /   | BKSPC |
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB  &kp Q          &kp W         &kp E         &kp R                &kp T                      &kp Y      &kp U                &kp I            &kp O         &kp P             &kp BSLH
-&kp ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_shift_l LSHFT F  &kp G                      &kp H      &hm_shift_r RSHFT J  &hm_r RGUI K     &hm_r RALT L  &hm_r RCTRL SEMI  &kp SQT
-&mo 4    &hm_l LGUI Z   &kp X         &kp C         &kp V                &kp B        &none  &none  &kp N      &kp M                &kp COMMA        &kp DOT       &kp FSLH          &kp BACKSPACE
+&kp TAB  &kp Q          &kp W         &kp F         &kp P                &kp B                      &kp J      &kp L                &kp U            &kp Y         &kp SEMI          &kp BSLH
+&kp ESC  &hm_l LCTRL A  &hm_l LALT R  &hm_l LGUI S  &hm_shift_l LSHFT T  &kp G                      &kp M      &hm_shift_r RSHFT N  &hm_r RGUI E     &hm_r RALT I  &hm_r RCTRL O     &kp SQT
+&mo 4    &hm_l LGUI Z   &kp X         &kp C         &kp D                &kp V        &none  &none  &kp K      &kp H                &kp COMMA        &kp DOT       &kp FSLH          &kp BACKSPACE
 &none    &none          &none         &lt 6 ESCAPE  &mo 2                &lt 5 SPACE                &kp ENTER  &mo 3                &lt 2 BACKSPACE  &none         &none             &none
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -213,7 +212,7 @@
 
             bindings = <
 &trans    &trans         &trans        &trans         &trans               &trans                  &trans  &trans               &trans         &trans        &trans            &trans
-&trans    &hm_l LCTRL A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHFT F  &trans                  &trans  &hm_shift_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RCTRL SEMI  &trans
+&trans    &hm_l LCTRL A  &hm_l LALT R  &hm_l LCTRL S  &hm_shift_l LSHFT T  &trans                  &trans  &hm_shift_r RSHFT N  &hm_r RCTRL E  &hm_r RALT I  &hm_r RCTRL O     &trans
 &kp LGUI  &trans         &trans        &trans         &trans               &trans  &trans  &trans  &trans  &trans               &trans         &trans        &trans            &trans
 &none     &none          &none         &trans         &trans               &trans                  &trans  &trans               &trans         &none         &none             &none
             >;
