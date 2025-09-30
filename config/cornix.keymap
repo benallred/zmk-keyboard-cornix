@@ -185,15 +185,15 @@
         default_layer {
             display-name = "Base";
 
-            // ---------------------------------- COLEMAK-DH LAYOUT ----------------------------------
+            // ----------------------- COLEMAK-DH LAYOUT (GACS homerow mods) -----------------------
             // |  TAB |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   ;   |   \   |
-            // |  ESC |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   '   |
+            // |  ESC |GUI/A|ALT/R|CTR/S |SHF/T |  G   |                   |  M   |SHF/N  |CTR/E |ALT/I |GUI/O  |   '   |
             // | MOD4 |  Z  |  X  |  C   |  D   |  V   |  MUTE  |  |       |  K   |  H    |  ,    |  .   |   /   | BKSPC |
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
 &kp TAB  &kp Q          &kp W         &kp F         &kp P                &kp B                      &kp J      &kp L                &kp U            &kp Y         &kp SEMI          &kp BSLH
-&kp ESC  &hm_l LCTRL A  &hm_l LALT R  &hm_l LGUI S  &hm_shift_l LSHFT T  &kp G                      &kp M      &hm_shift_r RSHFT N  &hm_r RGUI E     &hm_r RALT I  &hm_r RCTRL O     &kp SQT
+&kp ESC  &hm_l LGUI A   &hm_l LALT R  &hm_l LCTRL S &hm_shift_l LSHFT T  &kp G                      &kp M      &hm_shift_r RSHFT N  &hm_r RCTRL E    &hm_r RALT I  &hm_r RGUI O      &kp SQT
 &mo 4    &hm_l LGUI Z   &kp X         &kp C         &kp D                &kp V        &none  &none  &kp K      &kp H                &kp COMMA        &kp DOT       &kp FSLH          &kp BACKSPACE
 &none    &none          &none         &lt 6 ESCAPE  &mo 2                &lt 5 SPACE                &kp ENTER  &mo 3                &lt 2 BACKSPACE  &none         &none             &none
             >;
@@ -212,7 +212,7 @@
 
             bindings = <
 &trans    &trans         &trans        &trans         &trans               &trans                  &trans  &trans               &trans         &trans        &trans            &trans
-&trans    &hm_l LCTRL A  &hm_l LALT R  &hm_l LCTRL S  &hm_shift_l LSHFT T  &trans                  &trans  &hm_shift_r RSHFT N  &hm_r RCTRL E  &hm_r RALT I  &hm_r RCTRL O     &trans
+&trans    &hm_l LGUI A   &hm_l LALT R  &hm_l LCTRL S  &hm_shift_l LSHFT T  &trans                  &trans  &hm_shift_r RSHFT N  &hm_r RCTRL E  &hm_r RALT I  &hm_r RGUI O      &trans
 &kp LGUI  &trans         &trans        &trans         &trans               &trans  &trans  &trans  &trans  &trans               &trans         &trans        &trans            &trans
 &none     &none          &none         &trans         &trans               &trans                  &trans  &trans               &trans         &none         &none             &none
             >;
