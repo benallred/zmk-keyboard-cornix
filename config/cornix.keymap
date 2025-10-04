@@ -190,10 +190,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&sk LSHIFT  &kp Q             &kp W        &lt PARENS F  &kp P         &lt KEYBOARD B                          &kp J          &kp L          &lt PARENS U  &kp Y         &kp SEMI     &sk RSHIFT
-&xcv        &hml LGUI A       &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G                                   &kp M          &hmr RSHFT N   &hmr RCTRL E  &hmr RALT I   &hmr RGUI O  &kp SQT
-&caps_word  &hml LC(LSHFT) Z  &kp X        &kp C         &kp D         &kp V        &kp LC(KP_N0)  &kp C_MUTE  &kp K          &kp H          &kp COMMA     &kp DOT       &kp FSLH     &kp GRAVE
-&kp LC(S)   &kp LC(A)         &kp LC(Z)                  &kp ENTER     &mo SYMn10K  &kp TAB        &kp DEL     &lt NAV SPACE  &kp BACKSPACE                &mo FUNCTION  &mo MEDIA    &none
+&sk LSHIFT  &kp Q             &kp W        &lt PARENS F  &kp P         &lt KEYBOARD B                               &kp J          &kp L          &lt PARENS U  &kp Y         &kp SEMI     &sk RSHIFT
+&xcv        &hml LGUI A       &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G                                        &kp M          &hmr RSHFT N   &hmr RCTRL E  &hmr RALT I   &hmr RGUI O  &kp SQT
+&caps_word  &hml LC(LSHFT) Z  &kp X        &kp C         &kp D         &kp V        &kp LC(KP_N0)    &kp C_MUTE     &kp K          &kp H          &kp COMMA     &kp DOT       &kp FSLH     &kp GRAVE
+&kp LC(S)   &kp LC(A)         &kp LC(Z)                  &mo FUNCTION  &kp ENTER    &lt SYMn10K TAB  &lt NAV SPACE  &kp BACKSPACE  &mo FUNCTION                 &mo MEDIA     &none        &none
             >;
             sensor-bindings =
                 <&inc_dec_kp LC(EQUAL) LC(MINUS)>,
@@ -223,10 +223,10 @@
         navigation {
             display-name = "Navigation";
             bindings = <
-                &trans  &trans    &trans    &trans     &trans     &trans                  &trans  &kp PG_UP  &kp UP    &kp PG_DN  &trans     &trans
-                &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans  &kp LEFT   &kp DOWN  &kp RIGHT  &trans     &trans
-                &trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans  &kp HOME   &kp END   &trans     &kp LCTRL  &trans
-                &trans  &trans    &trans               &trans     &trans  &trans  &trans  &trans  &trans               &trans     &trans     &trans
+                &trans  &trans    &trans    &trans     &trans     &trans                  &trans   &kp PG_UP  &kp UP    &kp PG_DN  &trans     &trans
+                &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans     &trans
+                &trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &kp DEL  &kp HOME   &kp END   &trans     &kp LCTRL  &trans
+                &trans  &trans    &trans               &trans     &trans  &trans  &trans  &trans   &trans               &trans     &trans     &trans
             >;
         };
 
@@ -243,10 +243,10 @@
         media {
             display-name = "Media";
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans      &trans      &kp C_VOL_UP  &trans
-                &trans  &n1     &n2     &n3     &n4     &n5                     &trans  &trans  &trans      &kp C_PREV  &kp C_PP      &kp C_NEXT
-                &trans  &n6     &n7     &n8     &n9     &n0     &trans  &trans  &trans  &trans  &kp C_MUTE  &trans      &kp C_VOL_DN  &trans
-                &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans              &trans      &trans        &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans      &trans      &kp C_VOL_UP  &trans      &trans
+                &trans  &n1     &n2     &n3     &n4     &n5                     &trans  &trans      &kp C_PREV  &kp C_PP      &kp C_NEXT  &trans
+                &trans  &n6     &n7     &n8     &n9     &n0     &trans  &trans  &trans  &kp C_MUTE  &trans      &kp C_VOL_DN  &trans      &trans
+                &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans                  &trans        &trans      &trans
             >;
         };
 
