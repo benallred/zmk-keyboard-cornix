@@ -67,15 +67,13 @@
             // hold-trigger-on-release;
         };
 
-        // lt: layer_tap {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     bindings = <&mo>, <&kp>;
-
-        //     flavor = "hold-preferred";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <200>;
-        // };
+        lt_tab: layer_tap_tab {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
 
         xcv: tap_dance_clipboard {
             compatible = "zmk,behavior-tap-dance";
@@ -190,10 +188,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&sk LSHIFT  &kp Q             &kp W        &lt PARENS F  &kp P         &lt KEYBOARD B                               &kp J          &kp L          &lt PARENS U  &kp Y         &kp SEMI     &sk RSHIFT
-&xcv        &hml LGUI A       &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G                                        &kp M          &hmr RSHFT N   &hmr RCTRL E  &hmr RALT I   &hmr RGUI O  &kp SQT
-&caps_word  &hml LC(LSHFT) Z  &kp X        &kp C         &kp D         &kp V        &kp LC(KP_N0)    &kp C_MUTE     &kp K          &kp H          &kp COMMA     &kp DOT       &kp FSLH     &kp GRAVE
-&kp LC(S)   &kp LC(A)         &kp LC(Z)                  &mo FUNCTION  &kp ENTER    &lt SYMn10K TAB  &lt NAV SPACE  &kp BACKSPACE  &mo FUNCTION                 &mo MEDIA     &none        &none
+&sk LSHIFT  &kp Q             &kp W        &lt PARENS F  &kp P         &lt KEYBOARD B                                &kp J          &kp L          &lt PARENS U  &kp Y         &kp SEMI     &sk RSHIFT
+&xcv        &hml LGUI A       &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G                                         &kp M          &hmr RSHFT N   &hmr RCTRL E  &hmr RALT I   &hmr RGUI O  &kp SQT
+&caps_word  &hml LC(LSHFT) Z  &kp X        &kp C         &kp D         &kp V        &kp LC(KP_N0)     &kp C_MUTE     &kp K          &kp H          &kp COMMA     &kp DOT       &kp FSLH     &kp GRAVE
+&kp LC(S)   &kp LC(A)         &kp LC(Z)                  &mo FUNCTION  &kp ENTER    &lt_tab SYMn10K TAB  &lt NAV SPACE  &kp BACKSPACE  &mo FUNCTION                 &mo MEDIA     &none        &kp DEL
             >;
             sensor-bindings =
                 <&inc_dec_kp LC(EQUAL) LC(MINUS)>,
@@ -225,7 +223,7 @@
             bindings = <
                 &trans  &trans    &trans    &trans     &trans     &trans                  &trans   &kp PG_UP  &kp UP    &kp PG_DN  &trans     &trans
                 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans                  &trans   &kp LEFT   &kp DOWN  &kp RIGHT  &trans     &trans
-                &trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &kp DEL  &kp HOME   &kp END   &trans     &kp LCTRL  &trans
+                &trans  &trans    &trans    &trans     &trans     &trans  &trans  &trans  &trans   &kp HOME   &kp END   &trans     &kp LCTRL  &trans
                 &trans  &trans    &trans               &trans     &trans  &trans  &trans  &trans   &trans               &trans     &trans     &trans
             >;
         };
