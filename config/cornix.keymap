@@ -155,6 +155,7 @@
         escape {
             bindings = <&kp ESC>;
             key-positions = <LT2 LT3>;
+            layers = <BASE>;
         };
 
         question {
