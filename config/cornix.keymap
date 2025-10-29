@@ -79,7 +79,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mt LC(C) LC(V)>, <&mt LC(X) LC(LS(V))>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
         };
 
         #define FUNCTION_KEY(name, key, ...) \
