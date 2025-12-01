@@ -156,7 +156,7 @@
             bindings = <&kp ESC>;
             key-positions = <LT2 LT3>;
             layers = <BASE>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
 
         question {
@@ -175,14 +175,14 @@
             bindings = <&kp KP_DOT>;
             key-positions = <RB2 RB3>;
             layers = <SYMn10K>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
 
         kp_colon {
             bindings = <&kp COLON>;
             key-positions = <RB1 RB2>;
             layers = <SYMn10K>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <100>;
         };
     };
 
