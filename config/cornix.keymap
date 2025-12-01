@@ -252,10 +252,10 @@
         keyboard {
             display-name = "Keyboard";
             bindings = <
-                &bootloader  &bt0    &bt1    &bt2    &bt BT_CLR  &trans                  &trans  &trans  &trans  &trans  &trans  &bootloader
-                &trans       &trans  &trans  &trans  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans       &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
+                &bootloader  &bt0    &bt1    &bt2    &bt BT_CLR  &trans                  &kp INSERT  &kp KP_NUMLOCK  &trans  &trans  &trans  &bootloader
+                &trans       &trans  &trans  &trans  &trans      &trans                  &trans      &trans          &trans  &trans  &trans  &trans
+                &trans       &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans      &trans          &trans  &trans  &trans  &trans
+                &trans       &trans  &trans          &trans      &trans  &trans  &trans  &trans      &trans                  &trans  &trans  &trans
             >;
         };
 
